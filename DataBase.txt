@@ -1,0 +1,35 @@
+MONGODB
+========
+CREAR BASE COLECCION: db_customer
+DOCUMENT: customer
+
+
+MYSQL
+======
+
+CREATE DATABASE db_product;
+USE db_product;
+
+CREATE TABLE IF NOT EXISTS product(
+	id VARCHAR(10) PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+	category VARCHAR(50) NOT NULL,
+	commission DECIMAL NULL,
+	limitMovement DECIMAL NULL
+);
+
+INSERT INTO product (id, name, category, commission, limitMovement) VALUES ('P001', 'Cuenta de ahorro', 'Cuenta bancaria', 0, 6);
+INSERT INTO product (id, name, category, commission, limitMovement) VALUES ('P002', 'Cuenta corriente', 'Cuenta bancaria', 0.03, null);
+INSERT INTO product (id, name, category, commission, limitMovement) VALUES ('P003', 'Plazo fijo', 'Cuenta bancaria', 0, 1);
+INSERT INTO product (id, name, category, commission, limitMovement) VALUES ('P004', 'Crédito personal', 'Créditos', null, null);
+INSERT INTO product (id, name, category, commission, limitMovement) VALUES ('P005', 'Crédito empresarial', 'Créditos', null, null);
+INSERT INTO product (id, name, category, commission, limitMovement) VALUES ('P006', 'Tarjeta de crédito', 'Créditos', null, null);
+    
+select * from product;
+
+
+POSTGRES
+==========
+
+CREATE DATABASE db_account;
+
